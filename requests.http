@@ -1,1 +1,14 @@
 GET http://localhost:3000/places.json
+
+### post create place
+POST http://localhost:3000/places.json
+Content-Type: application/json
+
+{
+  "name": "Redwood Natl Park",
+  "address": "US-101, Orick, CA 95555",
+  "image_url": "https://lh5.googleusercontent.com/p/AF1QipPreaagP3dQh3QaY0Y20M03QcFIf2hLTnDCyv5z=w408-h272-k-no"
+}
+
+### GET places Show
+GET http://localhost:3000/places/4.json
