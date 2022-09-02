@@ -5,10 +5,20 @@ POST http://localhost:3000/places.json
 Content-Type: application/json
 
 {
-  "name": "Four Corners",
-  "address": "Cortez, CO",
-  "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN2ZtK38iJIXUlEOhmS3Fkgo23QBpzY_amnw&usqp=CAU"
+  "name": "Golden Gate Bridge",
+  "address": "San Francisco, CA",
+  "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4fYtNnFbnIKDT_5ZMSHAD2ZQK3ZwPK5swZw&usqp=CAU"
 }
 
 ### GET places Show
-GET http://localhost:3000/places/19
+GET http://localhost:3000/places/22
+
+### Patch places update
+PATCH http://localhost:3000/places/9.json
+Content-Type: application/json
+
+{
+  "name": "new_name",
+  "address": "123",
+  "image_url": "pic"
+}

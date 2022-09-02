@@ -16,4 +16,13 @@ class PlacesController < ApplicationController
     place = Place.find_by(id: params[:id])
     render json: place.as_json
   end
+
+  def update
+    place = Place.find_by(id: params[:id])
+    place.name = params[:name] || place.name
+    place.address = params[:address] || place.address
+    place.image_url = params[:image_url] || place.image_url
+    place.save
+    render json: place.as_json
+  end
 end
