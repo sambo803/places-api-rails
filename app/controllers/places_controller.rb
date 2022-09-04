@@ -25,4 +25,10 @@ class PlacesController < ApplicationController
     place.save
     render json: place.as_json
   end
+
+  def destroy
+    place = Place.find_by(id: params[:id])
+    place.destroy
+    render json: { message: "Place has been deleted" }
+  end
 end

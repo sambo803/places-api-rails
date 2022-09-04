@@ -1,3 +1,4 @@
+### get places index
 GET http://localhost:3000/places.json
 
 ### post create place
@@ -5,20 +6,21 @@ POST http://localhost:3000/places.json
 Content-Type: application/json
 
 {
-  "name": "Golden Gate Bridge",
-  "address": "San Francisco, CA",
-  "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4fYtNnFbnIKDT_5ZMSHAD2ZQK3ZwPK5swZw&usqp=CAU"
+  "name": "Statue of Liberty",
+  "address": "Ellis Island, NY",
+  "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHwREk73yTtyQwtIPEimSMwz6M7GI_PE_QNQ&usqp=CAU"
 }
 
 ### GET places Show
-GET http://localhost:3000/places/22
+GET http://localhost:3000/places/23
 
 ### Patch places update
-PATCH http://localhost:3000/places/9.json
+PATCH http://localhost:3000/places/1.json
 Content-Type: application/json
 
 {
-  "name": "new_name",
-  "address": "123",
-  "image_url": "pic"
+  "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDdvew11cIQ4tqM_U73R6FurCJC7z-cys2XQ&usqp=CAU"
 }
+
+### DELETE place destroy
+DELETE http://localhost:3000/places/11.json
